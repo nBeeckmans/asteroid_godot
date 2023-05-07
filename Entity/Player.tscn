@@ -1,0 +1,33 @@
+[gd_scene load_steps=7 format=3 uid="uid://n6gmghb877pw"]
+
+[ext_resource type="PackedScene" uid="uid://bu4d0xw23ekxx" path="res://Component/HitPoints.tscn" id="1_1dxef"]
+[ext_resource type="Script" path="res://Entity/Player.gd" id="1_5bpt6"]
+[ext_resource type="Texture2D" uid="uid://cb8kj6e8ljxwa" path="res://assets/Player.png" id="1_iqdfe"]
+[ext_resource type="PackedScene" uid="uid://cqqj7mle4k6s7" path="res://Component/Hitbox.tscn" id="1_iyfwm"]
+[ext_resource type="PackedScene" uid="uid://xs600evlbm7c" path="res://Component/LaunchBullet.tscn" id="4_rb4ne"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_21gax"]
+radius = 5.0
+height = 12.0
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_5bpt6")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(0, -14)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_iqdfe")
+
+[node name="HitPoints" parent="." instance=ExtResource("1_1dxef")]
+
+[node name="LaunchBullet" parent="." node_paths=PackedStringArray("STARTING_POSITION") instance=ExtResource("4_rb4ne")]
+STARTING_POSITION = NodePath("../Marker2D")
+
+[node name="Hitbox" parent="." node_paths=PackedStringArray("health") instance=ExtResource("1_iyfwm")]
+health = NodePath("../HitPoints")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(0, -6)
+shape = SubResource("CapsuleShape2D_21gax")
