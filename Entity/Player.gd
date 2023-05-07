@@ -12,7 +12,7 @@ var velocity : Vector2
 func _process(delta):
 	_move(delta)
 	_rotate()
-	
+
 func _move(deltaValue):
 	var playerInput = Input.get_vector(LEFT,RIGHT,UP,DOWN)
 	velocity = velocity + (SPEED * playerInput - velocity) * deltaValue

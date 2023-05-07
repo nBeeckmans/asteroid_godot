@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://d1u1kj5t3al5u"]
+
+[ext_resource type="Texture2D" uid="uid://clt4y1d78r8xa" path="res://assets/Asteroid.png" id="1_nhjuv"]
+[ext_resource type="Script" path="res://Entity/Asteroid.gd" id="1_s8oa4"]
+[ext_resource type="PackedScene" uid="uid://bu4d0xw23ekxx" path="res://Component/HitPoints.tscn" id="2_4ks6x"]
+[ext_resource type="PackedScene" uid="uid://cqqj7mle4k6s7" path="res://Component/Hitbox.tscn" id="3_bl64j"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5m1wg"]
+radius = 6.0
+
+[node name="Asteroid" type="Node2D"]
+script = ExtResource("1_s8oa4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_nhjuv")
+
+[node name="HitPoints" parent="." instance=ExtResource("2_4ks6x")]
+MAX_HEALTH = 1
+
+[node name="Hitbox" parent="." node_paths=PackedStringArray("health") instance=ExtResource("3_bl64j")]
+health = NodePath("../HitPoints")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+shape = SubResource("CircleShape2D_5m1wg")
