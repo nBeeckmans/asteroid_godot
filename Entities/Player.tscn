@@ -1,11 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://n6gmghb877pw"]
+[gd_scene load_steps=8 format=3 uid="uid://b0hpt61r6tnio"]
 
-[ext_resource type="PackedScene" uid="uid://bu4d0xw23ekxx" path="res://Component/HitPoints.tscn" id="1_1dxef"]
-[ext_resource type="Script" path="res://Entity/Player.gd" id="1_5bpt6"]
-[ext_resource type="Texture2D" uid="uid://cb8kj6e8ljxwa" path="res://assets/Player.png" id="1_iqdfe"]
-[ext_resource type="PackedScene" uid="uid://cqqj7mle4k6s7" path="res://Component/Hitbox.tscn" id="1_iyfwm"]
-[ext_resource type="PackedScene" uid="uid://xs600evlbm7c" path="res://Component/LaunchBullet.tscn" id="4_rb4ne"]
-[ext_resource type="PackedScene" uid="uid://cbop57hybsifh" path="res://Component/Bullet.tscn" id="5_ctrkb"]
+[ext_resource type="PackedScene" path="res://Components/HitPoints.tscn" id="1_1dxef"]
+[ext_resource type="Script" path="res://Entities/Player.gd" id="1_5bpt6"]
+[ext_resource type="Texture2D" uid="uid://cb8kj6e8ljxwa" path="res://Assets/Player.png" id="1_iqdfe"]
+[ext_resource type="PackedScene" path="res://Components/Hitbox.tscn" id="1_iyfwm"]
+[ext_resource type="PackedScene" path="res://Components/LaunchBullet.tscn" id="4_rb4ne"]
+[ext_resource type="PackedScene" path="res://Components/Bullet.tscn" id="5_ctrkb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_21gax"]
 radius = 5.0
@@ -24,10 +24,6 @@ texture = ExtResource("1_iqdfe")
 [node name="HitPoints" parent="." instance=ExtResource("1_1dxef")]
 
 [node name="LaunchBullet" parent="." node_paths=PackedStringArray("STARTING_POSITION") instance=ExtResource("4_rb4ne")]
-BULLET = ExtResource("5_ctrkb")
-STARTING_POSITION = NodePath("../Marker2D")
-
-[node name="LaunchBullet2" parent="." node_paths=PackedStringArray("STARTING_POSITION") instance=ExtResource("4_rb4ne")]
 BULLET = ExtResource("5_ctrkb")
 STARTING_POSITION = NodePath("../Marker2D")
 
