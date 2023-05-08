@@ -1,0 +1,1338 @@
+[gd_scene load_steps=2 format=3 uid="uid://de5c416nt1vk6"]
+
+[ext_resource type="Texture2D" uid="uid://cnjm5l2umkfls" path="res://Assets/Background.png" id="1_2h7th"]
+
+[node name="MainCamera" type="Camera2D"]
+zoom = Vector2(2, 2)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Temp" type="ParallaxLayer" parent="ParallaxBackground"]
+texture_repeat = 2
+position = Vector2(0, -144)
+motion_mirroring = Vector2(600, 300)
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-272, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-272, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D5" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-272, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D6" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-272, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D6"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D6"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D6/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D6/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D6/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D6/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D6/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D6/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D7" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-144, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D8" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-144, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D9" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-144, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D10" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-144, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D10"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D10"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D10/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D10/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D10/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D10/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D10/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D10/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D11" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-16, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D12" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-16, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D13" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-16, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D14" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-16, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D14"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D14"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D14/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D14/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D14/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D14/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D14/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D14/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D15" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(112, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D16" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(112, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D17" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(112, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D18" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(112, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D18"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D18"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D18/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D18/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D18/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D18/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D18/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D18/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D19" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-392, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D20" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-392, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D21" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-392, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D22" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-392, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D22"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D22"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D22/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D22/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D22/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D22/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D22/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D22/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D23" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-520, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D24" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-520, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D25" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-520, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D26" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(-520, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D26"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D26"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D26/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D26/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D26/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D26/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D26/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D26/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D27" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(96, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D28" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(96, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D29" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(96, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D30" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(96, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D30"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D30"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D30/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D30/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D30/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D30/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D30/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D30/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D31" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(160, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D32" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(160, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D33" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(160, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D34" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(160, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D34"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D34"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D34/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D34/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D34/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D34/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D34/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D34/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D35" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(288, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D36" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(288, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D37" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(288, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D38" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(288, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D38"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D38"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D38/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D38/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D38/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D38/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D38/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D38/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D39" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(424, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D40" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(424, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D41" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(424, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D42" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(424, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D42"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D42"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D42/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D42/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D42/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D42/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D42/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D42/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D43" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(360, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D44" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(360, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D45" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(360, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D46" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(360, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D46"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D46"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D46/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D46/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D46/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D46/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D46/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D46/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D47" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(328, 3)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D48" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(328, 67)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D49" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(328, 131)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D50" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(328, 195)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D50"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D50"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D50/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -317)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D50/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -253)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D50/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D50/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D50/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D50/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D51" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(520, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D52" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(520, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D53" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(520, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D54" type="Sprite2D" parent="ParallaxBackground/Temp"]
+texture_repeat = 2
+position = Vector2(520, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D54"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D54"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D54/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D54/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D54/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D54/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D54/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Temp/Sprite2D54/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground"]
+texture_repeat = 2
+position = Vector2(-648, -136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground"]
+texture_repeat = 2
+position = Vector2(-648, -72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D5" type="Sprite2D" parent="ParallaxBackground"]
+texture_repeat = 2
+position = Vector2(-648, -8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D6" type="Sprite2D" parent="ParallaxBackground"]
+texture_repeat = 2
+position = Vector2(-648, 56)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Sprite2D6"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Sprite2D6"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Sprite2D6/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Sprite2D6/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Sprite2D6/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Sprite2D6/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Sprite2D6/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Sprite2D6/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D7" type="Sprite2D" parent="ParallaxBackground"]
+texture_repeat = 2
+position = Vector2(-648, 168)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D8" type="Sprite2D" parent="ParallaxBackground"]
+texture_repeat = 2
+position = Vector2(-648, 232)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D9" type="Sprite2D" parent="ParallaxBackground"]
+texture_repeat = 2
+position = Vector2(-648, 296)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D10" type="Sprite2D" parent="ParallaxBackground"]
+texture_repeat = 2
+position = Vector2(-648, 360)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Sprite2D10"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Sprite2D10"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Sprite2D10/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Sprite2D10/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Sprite2D10/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Sprite2D10/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Sprite2D10/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Sprite2D10/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D11" type="Sprite2D" parent="ParallaxBackground"]
+texture_repeat = 2
+position = Vector2(-776, -136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D12" type="Sprite2D" parent="ParallaxBackground"]
+texture_repeat = 2
+position = Vector2(-776, -72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D13" type="Sprite2D" parent="ParallaxBackground"]
+texture_repeat = 2
+position = Vector2(-776, -8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D14" type="Sprite2D" parent="ParallaxBackground"]
+texture_repeat = 2
+position = Vector2(-776, 56)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Sprite2D14"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Sprite2D14"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Sprite2D14/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Sprite2D14/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Sprite2D14/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Sprite2D14/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Sprite2D14/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/Sprite2D14/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+texture_repeat = 2
+position = Vector2(0, -144)
+motion_mirroring = Vector2(600, 300)
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-272, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-272, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D5" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-272, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D6" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-272, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D6"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D6"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D6/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D6/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D6/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D6/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D6/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D6/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D7" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-144, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D8" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-144, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D9" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-144, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D10" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-144, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D10"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D10"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D10/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D10/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D10/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D10/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D10/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D10/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D11" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-16, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D12" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-16, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D13" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-16, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D14" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-16, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D14"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D14"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D14/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D14/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D14/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D14/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D14/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D14/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D15" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(112, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D16" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(112, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D17" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(112, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D18" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(112, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D18"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D18"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D18/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D18/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D18/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D18/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D18/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D18/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D19" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-392, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D20" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-392, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D21" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-392, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D22" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-392, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D22"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D22"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D22/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D22/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D22/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D22/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D22/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D22/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D23" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-520, 8)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D24" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-520, 72)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D25" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-520, 136)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D26" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(-520, 200)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D26"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D26"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D26/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -320)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D26/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(64, -256)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D26/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D26/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D26/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 64)
+texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Sprite2D26/Sprite2D4/Sprite2D4/Sprite2D4"]
+texture_repeat = 2
+position = Vector2(0, 128)
+texture = ExtResource("1_2h7th")

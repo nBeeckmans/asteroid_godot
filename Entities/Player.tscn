@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b0hpt61r6tnio"]
+[gd_scene load_steps=8 format=3]
 
 [ext_resource type="PackedScene" path="res://Components/HitPoints.tscn" id="1_1dxef"]
 [ext_resource type="Script" path="res://Entities/Player.gd" id="1_5bpt6"]

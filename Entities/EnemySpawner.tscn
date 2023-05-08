@@ -1,11 +1,29 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=4 format=3 uid="uid://b5talbsmywskh"]
 
 [ext_resource type="Script" path="res://Entities/EnemySpawner.gd" id="1_w8e13"]
+[ext_resource type="PackedScene" path="res://Entities/Asteroid.tscn" id="2_w688j"]
 
-[node name="EnemySpawner" type="Node2D"]
+[sub_resource type="Curve2D" id="Curve2D_6ydwc"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -768, -312, 0, 0, 0, 0, 896, -320, 0, 0, 0, 0, 896, 376, 0, 0, 0, 0, -768, 376, 0, 0, 0, 0, -768, -312)
+}
+point_count = 5
+
+[node name="EnemySpawner" type="Node2D" node_paths=PackedStringArray("Asteroid")]
 script = ExtResource("1_w8e13")
+Asteroid = NodePath("Asteroid")
 
-[node name="Timer" type="Timer" parent="."]
+[node name="SpawnTimer" type="Timer" parent="."]
+wait_time = 0.4
 autostart = true
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[node name="EnemyPath" type="Path2D" parent="."]
+curve = SubResource("Curve2D_6ydwc")
+
+[node name="EnemySpawnLocation" type="PathFollow2D" parent="EnemyPath"]
+position = Vector2(-768, -312)
+rotation = -0.00480765
+
+[node name="Asteroid" parent="." instance=ExtResource("2_w688j")]
+
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
