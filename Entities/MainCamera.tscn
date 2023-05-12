@@ -1,11 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://de5c416nt1vk6"]
+[gd_scene load_steps=3 format=3 uid="uid://de5c416nt1vk6"]
 
 [ext_resource type="Texture2D" uid="uid://cnjm5l2umkfls" path="res://Assets/Background.png" id="1_2h7th"]
+[ext_resource type="Texture2D" uid="uid://pxhy7xsrk4o" path="res://Assets/Black-BG.png" id="2_uv4tl"]
 
 [node name="MainCamera" type="Camera2D"]
 zoom = Vector2(2, 2)
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+visible = false
 
 [node name="Temp" type="ParallaxLayer" parent="ParallaxBackground"]
 texture_repeat = 2
@@ -1336,3 +1338,16 @@ texture = ExtResource("1_2h7th")
 texture_repeat = 2
 position = Vector2(0, 128)
 texture = ExtResource("1_2h7th")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+z_as_relative = false
+position = Vector2(0, 8.00001)
+scale = Vector2(12.8125, 6.9375)
+texture = ExtResource("2_uv4tl")
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+
+[node name="Sun" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene load_steps=4 format=3 uid="uid://cvnuywskg5ykb"]
 
 [ext_resource type="Script" path="res://Components/Bullet.gd" id="1_ooluq"]
 [ext_resource type="Texture2D" uid="uid://cvwgprx6k5cp0" path="res://Assets/Bullet.png" id="2_c7ld6"]

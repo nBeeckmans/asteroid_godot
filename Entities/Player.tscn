@@ -1,11 +1,11 @@
-[gd_scene load_steps=8 format=3]
+[gd_scene load_steps=8 format=3 uid="uid://cq4lphskto87y"]
 
 [ext_resource type="PackedScene" path="res://Components/HitPoints.tscn" id="1_1dxef"]
 [ext_resource type="Script" path="res://Entities/Player.gd" id="1_5bpt6"]
-[ext_resource type="Texture2D" uid="uid://cb8kj6e8ljxwa" path="res://Assets/Player.png" id="1_iqdfe"]
+[ext_resource type="Texture2D" uid="uid://ckvhmo43kwalr" path="res://Assets/Player.png" id="1_iqdfe"]
 [ext_resource type="PackedScene" path="res://Components/Hitbox.tscn" id="1_iyfwm"]
 [ext_resource type="PackedScene" path="res://Components/LaunchBullet.tscn" id="4_rb4ne"]
-[ext_resource type="PackedScene" path="res://Components/Bullet.tscn" id="5_ctrkb"]
+[ext_resource type="PackedScene" uid="uid://cvnuywskg5ykb" path="res://Components/Bullet.tscn" id="5_ctrkb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_21gax"]
 radius = 5.0
@@ -16,10 +16,6 @@ script = ExtResource("1_5bpt6")
 
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(0, -14)
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture_filter = 1
-texture = ExtResource("1_iqdfe")
 
 [node name="HitPoints" parent="." instance=ExtResource("1_1dxef")]
 
@@ -33,3 +29,9 @@ health = NodePath("../HitPoints")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
 position = Vector2(0, -6)
 shape = SubResource("CapsuleShape2D_21gax")
+
+[node name="Player" type="Sprite2D" parent="."]
+visibility_layer = 512
+texture_filter = 1
+position = Vector2(0, -6)
+texture = ExtResource("1_iqdfe")

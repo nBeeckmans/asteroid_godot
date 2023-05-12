@@ -1,4 +1,5 @@
 extends Node2D
+class_name Player
 
 @export var SPEED : float = 10.0
 
