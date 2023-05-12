@@ -1,12 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://b5talbsmywskh"]
+[gd_scene load_steps=4 format=3 uid="uid://b5talbsmywskh"]
 
 [ext_resource type="Script" path="res://Entities/EnemySpawner.gd" id="1_w8e13"]
-[ext_resource type="PackedScene" path="res://Entities/Asteroid.tscn" id="2_w688j"]
-[ext_resource type="Script" path="res://Entities/EnemyPath.gd" id="3_32y3j"]
+[ext_resource type="PackedScene" uid="uid://ca7o54n3e8u2u" path="res://Entities/Asteroid.tscn" id="2_w688j"]
 
 [sub_resource type="Curve2D" id="Curve2D_6ydwc"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -768, -312, 0, 0, 0, 0, 896, -320, 0, 0, 0, 0, 896, 376, 0, 0, 0, 0, -768, 376, 0, 0, 0, 0, -768, -312)
+"points": PackedVector2Array(0, 0, 0, 0, -251.077, -126.529, 0, 0, 0, 0, 220.923, -110.529, 0, 0, 0, 0, 212.923, 57.4713, 0, 0, 0, 0, -251.077, 65.4713, 0, 0, 0, 0, -251.077, -126.529)
 }
 point_count = 5
 
@@ -18,13 +17,12 @@ Asteroid = ExtResource("2_w688j")
 wait_time = 0.1
 autostart = true
 
-[node name="EnemyPath" type="Path2D" parent="." node_paths=PackedStringArray("NODE")]
+[node name="EnemyPath" type="Path2D" parent="."]
+position = Vector2(-4.9231, -1.47127)
 curve = SubResource("Curve2D_6ydwc")
-script = ExtResource("3_32y3j")
-NODE = NodePath("..")
 
 [node name="EnemySpawnLocation" type="PathFollow2D" parent="EnemyPath"]
-position = Vector2(-768, -312)
-rotation = -0.00480765
+position = Vector2(-251.077, -126.529)
+rotation = 0.0338853
 
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]

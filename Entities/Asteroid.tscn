@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=6 format=3 uid="uid://ca7o54n3e8u2u"]
 
 [ext_resource type="Script" path="res://Entities/Asteroid.gd" id="1_p5us7"]
 [ext_resource type="Texture2D" uid="uid://clt4y1d78r8xa" path="res://Assets/Asteroid.png" id="2_v4xif"]
@@ -23,3 +23,5 @@ health = NodePath("../HitPoints")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
 shape = SubResource("CircleShape2D_5m1wg")
+
+[connection signal="death" from="." to="." method="_on_death"]

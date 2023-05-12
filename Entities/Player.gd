@@ -21,3 +21,6 @@ func _move(deltaValue):
 
 func _rotate():
 	rotation = atan2(velocity.y, velocity.x) + PI/2
+
+func _death_handler(): 
+	print("dead")

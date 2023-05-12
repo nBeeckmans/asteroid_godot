@@ -17,11 +17,11 @@ script = ExtResource("1_5bpt6")
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(0, -14)
 
-[node name="HitPoints" parent="." instance=ExtResource("1_1dxef")]
-
 [node name="LaunchBullet" parent="." node_paths=PackedStringArray("STARTING_POSITION") instance=ExtResource("4_rb4ne")]
 BULLET = ExtResource("5_ctrkb")
 STARTING_POSITION = NodePath("../Marker2D")
+
+[node name="HitPoints" parent="." instance=ExtResource("1_1dxef")]
 
 [node name="Hitbox" parent="." node_paths=PackedStringArray("health") instance=ExtResource("1_iyfwm")]
 health = NodePath("../HitPoints")

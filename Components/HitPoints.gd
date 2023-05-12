@@ -8,6 +8,11 @@ var health
 func _ready(): 
 	health = MAX_HEALTH 
 
+func _process(delta): 
+	_death()
+	
+	
 func _death(): 
-	if health <= 0: 
-		get_parent().queue_free()
+	if health < 0: 
+		get_parent()._death_handler() 
+		
